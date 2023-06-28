@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="hola"
+        android:gravity="center"
+        android:layout_gravity="top" />
+
+    <ImageView
+        android:id="@+id/imagenGlide"
+        android:layout_width="126dp"
+        android:layout_height="69dp"
+        android:layout_below="@+id/textTitulo"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="1dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/card_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="584dp"
+        android:layout_marginTop="100dp"
+        android:scrollbars="vertical" />
+
+
+</RelativeLayout>
